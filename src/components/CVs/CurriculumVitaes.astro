@@ -1,0 +1,18 @@
+---
+import CurriculumVitae from './CurriculumVitae.astro'
+import file_cv_english from '../../documents/CV-RESUME-Lucas_Pose_english.pdf'
+import file_cv_spanish from '../../documents/CV-RESUME-Lucas_Pose.pdf'
+---
+<div>
+  <CurriculumVitae 
+    label='CV English'
+    file={file_cv_english}
+  />
+  <CurriculumVitae 
+    label='CV Español'
+    file={file_cv_spanish}
+  />
+</div>
+
+<style>
+</style>

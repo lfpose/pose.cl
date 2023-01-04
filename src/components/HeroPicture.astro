@@ -1,0 +1,40 @@
+
+<div class="hero-image-container">
+  <picture>
+    <source srcset="/assets/moon.webp" media="(min-width: 600px)">
+    <img class="hero-image" alt="Illustration of person in front of a computer" src="/assets/home-illustration.png" width="550" height="466">
+  </picture>
+
+    {/*<source srcset="/assets/home-illustration.png" media="(min-width: 600px)">*/}
+{/*
+  <p class="caption">
+    Illustration by 
+    <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA" target="_blank" rel="noopener">Icons 8</a>
+    from <a href="https://icons8.com/illustrations" target="_blank" rel="noopener">Ouch!</a>
+  </p>
+*/}
+</div>
+
+<style>
+
+  .hero-image-container {
+    margin: 0 1em;
+    text-align: center;
+  }
+  .hero-image-container picture {
+    display: block;
+  }
+  .hero-image {
+    width: 100%;
+    max-width: 550px;
+  }
+  @media (max-width: 1200px) {
+
+    .hero-image {
+      max-width: 400px;
+    }
+  }
+
+
+
+</style>

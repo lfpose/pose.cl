@@ -7,9 +7,7 @@ import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://lfpose.github.io',
-  base: '/pose.cl',
-  //output: 'server',
+  site: 'https://pose-cl.vercel.app/',
   integrations: [mdx(), svelte(), tailwind()],
   markdown: {
     shikiConfig: {

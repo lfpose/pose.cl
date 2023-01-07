@@ -1,22 +1,26 @@
 * {
-  /*outline: 1px solid rgba(255,255,255,0.3);*/
+  /*outline: 1px solid rgba(255,0,0,0.3);*/
   /*background-color: rgba(255,255,255,0.1)*/
 }
 
 :root {
   --background-body: #fff;
   --text-main: #36393b;
-  --text-secondary: #6b6f72;
-  --primary-color: #548e9b;
+  /*--text-secondary: #6b6f72;*/
+  --text-secondary: rgb(107 114 128);
+  /*--primary-color: #548e9b;*/
+  /*--primary-color: red;*/
+  --primary-color: #308d30;
   --font-family-serif: Merriweather, serif;
-  --font-family-sans: 'Fira Sans', sans-serif;
+  /*--font-family-sans: 'Fira Sans', sans-serif;*/
+  --font-family-sans: 'Open Sans', sans-serif;
   --star-color: #111
 }
 
 :root.theme-dark {
   /*--background-body: #202122;*/
-  /*--background-body: #001;*/
-  --background-body: #11132c;
+  --background-body: #001;
+  /*--background-body: #11132c;*/
   --text-main: #fff;
   --text-secondary: #ccc;
   --primary-color: #548e9b;

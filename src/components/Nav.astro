@@ -5,10 +5,8 @@ const { current = '' } = Astro.props;
 
 <nav>
   <a class={current === "" ? "selected" : ""} href='/'>home</a>
-{/*
   <a class={current === "about" ? "selected" : ""} href='/about'>about</a>
   <a class={current === "blog" ? "selected" : ""} href='/blog'>blog</a>
-*/}
   <div class="theme-toggle-container">
     <ThemeToggleButton client:load />
   </div>
@@ -31,7 +29,8 @@ const { current = '' } = Astro.props;
     display: flex;
     flex: 1;
     font-family: var(--font-family-sans);
-    font-family: "Chango", monospace;
+    /*font-family: "Chango", monospace;*/
+    /*font-family: monospace;*/
     font-weight: 700;
     justify-content: flex-end;
     text-transform: uppercase;

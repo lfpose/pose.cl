@@ -1,0 +1,45 @@
+---
+import PortfolioCard from './PortfolioCard.astro'
+---
+
+
+<div class="container">
+  <div class="flex overflow-x-scroll pb-10 hide-scroll-bar">
+    <div class="content">
+      <PortfolioCard 
+      />
+      <PortfolioCard />
+      <PortfolioCard />
+      <PortfolioCard />
+  </div>
+</div>
+
+<style>
+
+  .container {
+    @apply 
+      rounded-xl;
+  }
+
+.content {
+  @apply 
+    flex 
+    gap-x-6
+    flex-nowrap lg:ml-40 md:ml-20 ml-10
+  ;
+}
+
+.content > div {
+  /*height: 480px;*/
+}
+
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+  
+
+</style>

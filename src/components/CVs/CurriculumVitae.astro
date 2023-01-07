@@ -1,33 +1,37 @@
 ---
-import { Icon } from 'astro-icon'
 const { label } = Astro.props
 const { file } = Astro.props
 ---
-<a class="cv-button cursor-pointer" href={file} target="_blank">
-  <span>
-    {label}
-  </span>
-  <span class="w-8 h-8">
-    <Icon name="ic:outline-download" />
-  </span>
+<a href={file} target="_blank">
+  <div>
+    <div>
+      {label}
+    </div>
+    <div>
+      // descargar
+    </div>
+  </div>
 </a>
 
 <style>
-a.cv-button:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-a.cv-button {
-  @apply m-4 text-xl py-4 px-8 shadow-xl rounded-lg pl-8;
-  display: flex;
-  justify-content: space-between;
-  font-family: "lato", sans-serif;
-  font-weight: 300;
-  font-size: 32px;
-  letter-spacing: 5px;
 
-  background: rgba(0,0,0,0.4);
-  background: linear-gradient(to top left, rgba(0,0,0,0.5), rgba(0,0,0,0.4));
-  color: white;
+a > div:hover {
+  @apply
+    opacity-75
+    bg-gray-200
+    text-gray-600
+}
+a > div {
+  @apply 
+    px-3 py-1
+    rounded-sm;
+
+  /*font-weight: 300;*/
+  /*font-size: 32px;*/
+  /*letter-spacing: 5px;*/
+  /*background: rgba(0,0,0,0.4);*/
+  /*background: linear-gradient(to top left, rgba(0,0,0,0.5), rgba(0,0,0,0.4));*/
+  /*color: white;*/
 }
 
 </style>

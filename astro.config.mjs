@@ -6,7 +6,9 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://lpose.cl',
+  site: 'https://astronaut.github.io',
+  base: '/pose.cl',
+
   //output: 'server',
   integrations: [mdx(), svelte(), tailwind()],
   markdown: {

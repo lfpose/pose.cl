@@ -3,16 +3,30 @@ import CurriculumVitae from './CurriculumVitae.astro'
 import file_cv_english from '../../documents/CV-RESUME-Lucas_Pose_english.pdf'
 import file_cv_spanish from '../../documents/CV-RESUME-Lucas_Pose.pdf'
 ---
-<div>
-  <CurriculumVitae 
-    label='CV English'
-    file={file_cv_english}
-  />
-  <CurriculumVitae 
-    label='CV Español'
-    file={file_cv_spanish}
-  />
+<div class="container">
+  <div>
+    <CurriculumVitae 
+      label='Curriculum Vitae English'
+      file={file_cv_english}
+    />
+  </div>
+  <div>
+    <CurriculumVitae 
+      label='Curriculum Vitae Español'
+      file={file_cv_spanish}
+    />
+  </div>
 </div>
 
 <style>
+.container {
+  @apply 
+    flex space-x-4
+    /*bg-red-100*/
+;
+}
+.container > div {
+  flex: 1 1 0px;
+}
+
 </style>

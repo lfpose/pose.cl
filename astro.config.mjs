@@ -2,12 +2,10 @@ import { defineConfig } from 'astro/config';
 import svelte from '@astrojs/svelte';
 import mdx from '@astrojs/mdx';
 import tailwind from "@astrojs/tailwind";
-import vercel from "@astrojs/vercel/serverless";
 
-// https://astro.build/config
 export default defineConfig({
-  output: "server",
-  adapter: vercel(),
+  site: 'https://lfpose.github.io',
+  base: '/pose.cl',
   integrations: [mdx(), svelte(), tailwind()],
   markdown: {
     shikiConfig: {

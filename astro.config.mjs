@@ -5,7 +5,6 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: 'https://lfpose.github.io',
-  base: '/pose.cl',
   integrations: [mdx(), svelte(), tailwind()],
   markdown: {
     shikiConfig: {

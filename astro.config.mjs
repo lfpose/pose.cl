@@ -1,11 +1,12 @@
 import { defineConfig } from 'astro/config';
-import svelte from '@astrojs/svelte';
 import mdx from '@astrojs/mdx';
 import tailwind from "@astrojs/tailwind";
+import image from "@astrojs/image";
 
+// https://astro.build/config
 export default defineConfig({
   site: 'https://lfpose.github.io',
-  integrations: [mdx(), svelte(), tailwind()],
+  integrations: [mdx(), tailwind(), image({serviceEntryPoint: '@astrojs/image/sharp'})],
   markdown: {
     shikiConfig: {
       theme: 'nord'
@@ -13,5 +14,5 @@ export default defineConfig({
     rehypePlugins: [['rehype-external-links', {
       target: '_blank'
     }]]
-  },
+  }
 });

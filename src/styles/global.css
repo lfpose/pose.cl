@@ -7,13 +7,14 @@
   --background-body: #fff;
   --text-main: #36393b;
   /*--text-secondary: #6b6f72;*/
-  --text-secondary: rgb(107 114 128);
+  --text-secondary: rgb(73, 174, 120);
   /*--primary-color: #548e9b;*/
   /*--primary-color: red;*/
   --primary-color: #308d30;
   --font-family-serif: Merriweather, serif;
-  /*--font-family-sans: 'Fira Sans', sans-serif;*/
-  --font-family-sans: 'Open Sans', sans-serif;
+  /*--font-family-sans: 'Sofia', sans-serif;*/
+  /*--font-family-sans: 'Open Sans', sans-serif;*/
+  --font-family-sans: 'Sofia Sans Semi Condensed', sans-serif;
   --star-color: #111
 }
 
@@ -35,7 +36,8 @@
 
 body {
   margin: 0;
-  font-family: var(--font-family-serif);
+  /*font-family: var(--font-family-serif);*/
+  font-family: var(--font-family-sans);
   font-size: 16px;
   line-height: 1.6;
   background-color: var(--background-body);
@@ -55,7 +57,8 @@ h6 {
 }
 
 h1 {
-  font-family: var(--font-family-serif);
+  /*font-family: var(--font-family-serif);*/
+  font-family: var(--font-family-sans);
   font-size: 4em;
   margin: 0 0 1em 0;
 }

@@ -1,17 +1,18 @@
 ---
-const { label } = Astro.props
-const { file } = Astro.props
+const { label, file, downloadLabel } = Astro.props
 ---
-<a href={file} target="_blank">
-  <div>
+<div>
+  <a href={file} target="_blank">
     <div>
-      {label}
+      <div>
+        {label}
+      </div>
+      <div>
+        {`// ${downloadLabel}`}
+      </div>
     </div>
-    <div>
-      // descargar
-    </div>
-  </div>
-</a>
+  </a>
+</div>
 
 <style>
 
@@ -22,6 +23,7 @@ a > div:hover {
     text-gray-600
 }
 a > div {
+  cursor:pointer;
   @apply 
     px-3 py-1
     rounded-sm;

@@ -1,20 +1,13 @@
 ---
-import CurriculumVitae from './CurriculumVitae.astro'
+/*import CurriculumVitae from './CurriculumVitae.astro'*/
 import file_cv_english from '../../documents/CV-RESUME-Lucas_Pose_english.pdf'
 import file_cv_spanish from '../../documents/CV-RESUME-Lucas_Pose.pdf'
 ---
 <div class="container">
   <div>
-    <CurriculumVitae 
-      label='Curriculum Vitae English'
-      file={file_cv_english}
-    />
-  </div>
-  <div>
-    <CurriculumVitae 
-      label='Curriculum Vitae Español'
-      file={file_cv_spanish}
-    />
+    You can download this file in 
+    <a target="_blank" href={file_cv_english} >english</a> or in 
+    <a target="_blank" href={file_cv_spanish} >spanish</a>.
   </div>
 </div>
 
@@ -22,11 +15,12 @@ import file_cv_spanish from '../../documents/CV-RESUME-Lucas_Pose.pdf'
 .container {
   @apply 
     flex space-x-4
-    /*bg-red-100*/
-;
+  ;
 }
-.container > div {
-  flex: 1 1 0px;
+a {
+  @apply underline text-cyan-700 italic
+    hover:bg-slate-700 hover:text-white
+    ;
 }
 
 </style>

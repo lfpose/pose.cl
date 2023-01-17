@@ -1,16 +1,47 @@
 ---
 import PortfolioCard from './PortfolioCard.astro'
+const projectOneCover = 'src/screenshots/campus-hr/image8.png'
+const projectTwoCover = 'src/screenshots/climate-care-1.png'
+
+const data = [
+  {
+    title:       'ClimateCare Catalogue',
+    subtitle:    'Catalogue for climate festival by Floating-Berlin',
+    role:        'Programmer.',
+    description: 'Catalogue website with rich interaction.',
+    dates:       '2019',
+    length:      '6 months',
+    img:         projectTwoCover,
+    visitLink: 'https://climatecare.s-o-f-t.agency/2019',
+    /*technologies: */
+  },
+  {
+    title:       'CampusHR',
+    subtitle:    'HR SaaS',
+    role:        'Software Engineer, Lead developer, architect and design.',
+    description: 'HR solutions software. Payroll, Documents, Surveys, Performance, KPI, etc',
+    dates:       '2019-2022',
+    length:      '2.5 years',
+    img:         projectOneCover,
+  },
+]
 ---
 
 
 <div class="container">
   <div class="flex overflow-x-scroll pb-10 hide-scroll-bar">
     <div class="content">
-      <PortfolioCard 
-      />
-      <PortfolioCard />
-      <PortfolioCard />
-      <PortfolioCard />
+      {data.map((d) => (
+        <PortfolioCard 
+          img={d.img}
+          title={d.title}
+          subtitle={d.subtitle}
+          role={d.role}
+          description={d.description}
+          dates={d.dates}
+          length={d.length}
+        />
+      ))}
   </div>
 </div>
 
@@ -25,7 +56,7 @@ import PortfolioCard from './PortfolioCard.astro'
   @apply 
     flex 
     gap-x-6
-    flex-nowrap lg:ml-40 md:ml-20 ml-10
+    flex-nowrap
   ;
 }
 
@@ -34,11 +65,11 @@ import PortfolioCard from './PortfolioCard.astro'
 }
 
 .hide-scroll-bar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  /*-ms-overflow-style: none;*/
+  /*scrollbar-width: none;*/
 }
 .hide-scroll-bar::-webkit-scrollbar {
-  display: none;
+  /*display: none;*/
 }
   
 
